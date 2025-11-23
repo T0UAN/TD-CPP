@@ -12,4 +12,10 @@ public class Player
         std::string getName() { return playerName; }
         vector<Card*> getBenchCards() { return benchCards; }
         vector<PokemonCard*> getActionCards() { return actionCards; }
+        void activatePokemonCard(int index);
+        void attachEnergyCard(int energyIndex, int pokemonIndex);
+        void displayBench();
+        void displayAction();
+        void atatck(int attackerIndex, int attackIndex, Player& opponent, int opponentPokemonIndex);
+        void useTrainer(int trainerIndex);
 };
